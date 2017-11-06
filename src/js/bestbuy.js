@@ -1,8 +1,8 @@
 export default obj => {
     return new Promise((resolve, reject) => {
         let xhr = new XMLHttpRequest();
-        xhr.open(obj.method || "GET", obj.url+'?apiKey='+obj.api+'&format=json');
-        
+        xhr.open(obj.method || "GET", obj.url+'?apiKey=' +obj.api+'&format=json');
+
         xhr.onload = () => {
             if (xhr.status >= 200 && xhr.status < 300) {
                 resolve(JSON.parse(xhr.response));
@@ -14,4 +14,3 @@ export default obj => {
         xhr.send(obj.body);
     });
 };
-

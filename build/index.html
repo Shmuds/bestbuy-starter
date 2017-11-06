@@ -1,9 +1,66 @@
 <html>
     <head>
       <link rel="stylesheet" type="text/css" href="./css/build.css" />
-        <title>Best Buy Shopping Cart</title>
+     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+             <title>Best Buy Shopping Cart</title>
+                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+
     </head>
     <body>
+
+      <div class="banner">
+      <button id="cart">Cart</button>
+      <div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h1>Your Cart</h1>
+    <div id="total">
+    <h3 class="totalItems">Total Items  : </h3>  | <h3 class="cartTotal"> Cart Total:  </h3>
+   </div>
+   <div class="items">
+
+   </div>
+  </div>
+
+</div>
+      <header>
+        <h1> Welcome to a better Bestbuy Store</h1>
+        <h2> Shop here because we are awesome </h2>
+        <a href="#products">
+        <button type="button" name="button"> Shop Now </button>
+        </a>
+    </div>
+      <section id="description">
+        <h2>We sell the same stuff as bestbuy, but we're <span>better</span></h2>
+        <p>You are proabbly wondering why am I here and not on the real Bestbuy, Ill tell you why. We have a way cooler selection of products
+        and all at a discounted price. I know I know, WOW how have I not found this website earlier. All that matters is that you're here now and you can tell all
+      of your friends what website to go to when they want electronics. </p>
+      </section>
+      <nav>
+        <ul class="bxslider">
+          <li class="laptop" id="((categoryPath.id=abcat0502000))"> Laptops </li>
+          <li class="cellphone" id="((categoryPath.id=pcmcat209400050001))"> Cellphones </li>
+          <li class="tv" id="((categoryPath.id=abcat0101000))"> Television </li>
+          <li class="headphone" id="((categoryPath.id=abcat0204000))"> Headphones </li>
+        </ul>
+      </nav>
+      <div id="products">
+
+      </div>
+
+      <footer>
+      <h2>Sign up for updates</h2>
+      <h3>We will not stop emailing you </h3>
+<form class="updates">
+    <div>
+      <input  type="text" placeholder="Enter Your Email">
+      <button type="submit"> Sign up </button>
+    </div>
+</form>
+      </footer>
         <script src="js/bundle.js"></script>
     </body>
 </html>
